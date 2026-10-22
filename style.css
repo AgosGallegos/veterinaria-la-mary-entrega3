@@ -1,7 +1,7 @@
 
-/* =========================
-   CONFIGURACIÓN GENERAL
-========================= */
+/* ==========================
+   ESTILOS GENERALES
+========================== */
 
 * {
     box-sizing: border-box;
@@ -24,27 +24,28 @@ img {
     max-width: 100%;
 }
 
-/* =========================
-   NAVEGACIÓN
-========================= */
+/* ==========================
+   BARRA DE NAVEGACIÓN
+========================== */
 
 .site-header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #ffffff;
-    box-shadow: 0 3px 15px rgba(35, 60, 65, 0.08);
+    background: #fff;
+    box-shadow: 0 3px 18px rgba(30, 60, 70, 0.08);
 }
 
 .navbar {
     min-height: 95px;
-    padding: 15px 0;
+    padding: 16px 12px;
 }
 
 .navbar-brand {
-    color: #18252b;
-    font-size: 24px;
+    color: #294653;
+    font-size: 25px;
     font-weight: 800;
+    text-decoration: none;
 }
 
 .navbar-brand:hover {
@@ -56,64 +57,73 @@ img {
 }
 
 .nav-link {
-    padding: 12px 15px !important;
-    border-radius: 28px;
+    padding: 11px 14px !important;
+    border-radius: 30px;
     color: #294653;
     font-weight: 700;
+    text-decoration: none;
     white-space: nowrap;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #ffffff !important;
+    color: #fff !important;
     background: #279f91;
 }
 
-/* =========================
-   PORTADA CON FONDO
-========================= */
+/* ==========================
+   PORTADA PRINCIPAL
+========================== */
 
 .hero {
+    position: relative;
     min-height: 680px;
     display: flex;
     align-items: center;
-    padding: 85px 8%;
-    color: #ffffff;
+    justify-content: center;
+    overflow: hidden;
+    padding: 85px 24px;
 
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(25, 48, 56, 0.72),
-            rgba(25, 48, 56, 0.30)
-        ),
-        url("mascotas.jpg");
-
+    background-image: url("mascotas.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #789096;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(23, 48, 57, 0.76),
+        rgba(23, 48, 57, 0.38)
+    );
 }
 
 .hero-content {
+    position: relative;
+    z-index: 1;
     width: 100%;
     max-width: 790px;
     margin: 0 auto;
+    color: #fff;
 }
 
-.hero-badge,
-.section-badge {
+.hero-badge {
     display: inline-block;
-    padding: 10px 17px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+    padding: 11px 20px;
     border-radius: 30px;
-    background: #e3f6f2;
+    background: #fff;
     color: #087c73;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
 }
 
 .hero h1 {
-    margin: 15px 0 25px;
-    color: #ffffff;
+    margin: 0 0 24px;
+    color: #fff;
     font-size: clamp(42px, 5.5vw, 76px);
     font-weight: 800;
     line-height: 1.12;
@@ -125,78 +135,91 @@ img {
 }
 
 .hero p {
-    max-width: 690px;
-    margin-bottom: 28px;
+    max-width: 680px;
+    margin: 0 0 28px;
+    color: #fff;
     font-size: 19px;
+    line-height: 1.7;
 }
 
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
 }
 
-/* =========================
+/* ==========================
    BOTONES
-========================= */
+========================== */
 
 .button-primary,
 .button-outline {
     display: inline-block;
-    padding: 14px 25px;
+    padding: 14px 26px;
     border: 2px solid #279f91;
     border-radius: 35px;
     font-weight: 700;
     text-decoration: none;
-    transition: 0.2s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .button-primary {
     background: #279f91;
-    color: #ffffff;
+    color: #fff;
 }
 
 .button-primary:hover {
-    background: #207f75;
     border-color: #207f75;
-    color: #ffffff;
+    background: #207f75;
+    color: #fff;
 }
 
 .button-outline {
-    border-color: #ffffff;
+    border-color: #fff;
     background: transparent;
-    color: #ffffff;
+    color: #fff;
 }
 
 .button-outline:hover {
-    background: #ffffff;
+    background: #fff;
     color: #294653;
 }
 
-/* =========================
-   PRESENTACIÓN
-========================= */
+/* ==========================
+   PRESENTACIÓN DE MASCOTAS
+========================== */
 
 .presentation-section {
-    padding: 95px 0;
+    padding: 90px 0;
     background: #fffaf5;
 }
 
 .presentation-image {
     width: 100%;
-    height: 480px;
+    height: 460px;
     object-fit: cover;
     object-position: center;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(35, 60, 65, 0.12);
+}
+
+.section-badge {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding: 9px 16px;
     border-radius: 30px;
-    box-shadow: 0 18px 45px rgba(40, 60, 65, 0.12);
+    background: #e3f6f2;
+    color: #087c73;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .presentation-section h2,
 .professionals-section h2,
 .contact-section h2 {
-    margin: 10px 0 20px;
-    color: #253f4b;
-    font-size: clamp(30px, 4vw, 46px);
+    margin: 0 0 20px;
+    color: #294653;
+    font-size: clamp(30px, 4vw, 45px);
     font-weight: 800;
     line-height: 1.2;
 }
@@ -206,37 +229,40 @@ img {
 .contact-section p {
     color: #627985;
     font-size: 17px;
+    line-height: 1.7;
 }
 
-/* =========================
-   PROFESIONALES
-========================= */
+/* ==========================
+   TARJETAS DE PROFESIONALES
+========================== */
 
 .professionals-section {
-    padding: 90px 0;
+    padding: 85px 0;
     background: #f0f7f5;
 }
 
 .section-heading {
-    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto 42px;
     text-align: center;
 }
 
 .section-heading h2 {
-    margin-top: 0;
+    margin-bottom: 16px;
 }
 
 .professional-card {
     height: 100%;
     overflow: hidden;
-    border-radius: 25px;
-    background: #ffffff;
-    box-shadow: 0 12px 35px rgba(40, 60, 65, 0.09);
-    transition: transform 0.2s ease;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: 0 12px 32px rgba(35, 60, 65, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .professional-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 18px 38px rgba(35, 60, 65, 0.14);
 }
 
 .professional-image {
@@ -244,48 +270,49 @@ img {
     height: 300px;
     object-fit: cover;
     object-position: center;
-    background: #e9f0ed;
+    background: #e5eeeb;
 }
 
 .professional-info {
-    padding: 25px 22px;
+    padding: 23px;
 }
 
 .professional-info .section-badge {
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .professional-info h3 {
-    margin-bottom: 12px;
-    color: #253f4b;
-    font-size: 25px;
+    margin: 0 0 12px;
+    color: #294653;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .professional-info p {
-    margin-bottom: 0;
+    margin: 0;
 }
 
-/* =========================
-   CONTACTO
-========================= */
+/* ==========================
+   CONTACTO FINAL
+========================== */
 
 .contact-section {
     padding: 75px 20px;
-    background: #ffffff;
+    background: #fff;
 }
 
 .contact-section p {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
-/* =========================
+/* ==========================
    PIE DE PÁGINA
-========================= */
+========================== */
 
 .site-footer {
-    padding: 28px 15px;
+    padding: 26px 15px;
     background: #294653;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
 }
 
@@ -293,9 +320,9 @@ img {
     margin: 0;
 }
 
-/* =========================
-   ADAPTACIÓN A CELULARES
-========================= */
+/* ==========================
+   TABLET Y CELULAR
+========================== */
 
 @media (max-width: 991px) {
     .navbar {
@@ -303,7 +330,8 @@ img {
     }
 
     .navbar-nav {
-        padding-top: 15px;
+        gap: 4px;
+        padding-top: 12px;
     }
 
     .nav-link {
@@ -312,7 +340,7 @@ img {
 
     .hero {
         min-height: 600px;
-        padding: 75px 7%;
+        padding: 70px 7%;
         background-position: center;
     }
 
@@ -328,7 +356,8 @@ img {
 
     .hero {
         min-height: 560px;
-        padding: 60px 22px;
+        padding: 55px 22px;
+        background-position: center;
     }
 
     .hero h1 {
@@ -355,5 +384,9 @@ img {
 
     .professional-image {
         height: 280px;
+    }
+
+    .professional-info {
+        padding: 20px;
     }
 }
