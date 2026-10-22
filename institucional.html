@@ -6,66 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Institucional | Veterinaria La Mary</title>
-
-    <link rel="stylesheet" href="style.css?v=3">
-    <link rel="stylesheet" href="paginas.css?v=1">
+    <meta name="description" content="Conocé la misión, visión y valores de Veterinaria La Mary.">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="paginas.css?v=2">
 </head>
 
 <body class="pagina-institucional">
 
     <!-- ENCABEZADO -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container contenedor nav">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand" href="index.html">🐾 Veterinaria La Mary</a>
 
-                <a href="index.html" class="navbar-brand logo">
-                    🐾 Veterinaria La Mary
-                </a>
-
-                <button
-                    class="navbar-toggler"
+            <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#menuPrincipal"
                     aria-controls="menuPrincipal"
                     aria-expanded="false"
                     aria-label="Abrir menú">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <!-- MENÚ -->
-                <div class="collapse navbar-collapse" id="menuPrincipal">
-                    <nav class="navbar-nav ms-auto">
-
-                        <a href="index.html" class="nav-link">
-                            Inicio
-                        </a>
-
-                        <a href="institucional.html" class="nav-link activo">
-                            Institucional
-                        </a>
-
-                        <a href="contacto.html" class="nav-link">
-                            Contacto
-                        </a>
-
-                        <!-- ENLACES DE LA TERCERA ENTREGA -->
-                        <a href="mascotas.html" class="nav-link">
-                            Mascotas
-                        </a>
-
-                        <a href="veterinarios.html" class="nav-link">
-                            Veterinarios
-                        </a>
-
-                        <a href="admin.html" class="nav-link">
-                            Administración
-                        </a>
-
-                    </nav>
-                </div>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="institucional.html">Institucional</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mascotas.html">Mascotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="veterinarios.html">Veterinarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Administración</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -81,34 +66,27 @@
 
             <section class="tarjeta-institucional">
 
-                <!-- ¿QUIÉNES SOMOS? -->
-                <div class="bloque-institucional row align-items-start">
-                    <div class="icono-institucional col-auto">🐾</div>
-
-                    <div class="col">
+                <div class="bloque-institucional">
+                    <div class="icono-institucional">🐾</div>
+                    <div>
                         <h2>¿Quiénes somos?</h2>
-
                         <p>
                             Veterinaria La Mary es un espacio dedicado al cuidado
                             integral de las mascotas. Nuestro objetivo es brindar
                             atención profesional y acompañamiento a las familias
                             responsables de sus animales.
                         </p>
-
                         <p>
-                            Contamos con profesionales especializados que trabajan
-                            para ofrecer una atención responsable, cercana y de calidad.
+                            Contamos con profesionales dedicados a ofrecer una
+                            atención responsable, cercana y de calidad.
                         </p>
                     </div>
                 </div>
 
-                <!-- MISIÓN -->
-                <div class="bloque-institucional row align-items-start">
-                    <div class="icono-institucional col-auto">🎯</div>
-
-                    <div class="col">
+                <div class="bloque-institucional">
+                    <div class="icono-institucional">🎯</div>
+                    <div>
                         <h2>Nuestra misión</h2>
-
                         <p>
                             Brindar atención veterinaria de calidad, priorizando
                             la salud, el bienestar y la calidad de vida de cada mascota.
@@ -116,13 +94,10 @@
                     </div>
                 </div>
 
-                <!-- VISIÓN -->
-                <div class="bloque-institucional row align-items-start">
-                    <div class="icono-institucional col-auto">👁️</div>
-
-                    <div class="col">
+                <div class="bloque-institucional">
+                    <div class="icono-institucional">👁️</div>
+                    <div>
                         <h2>Nuestra visión</h2>
-
                         <p>
                             Ser una veterinaria reconocida por la calidad de sus
                             servicios, el compromiso de sus profesionales y el trato
@@ -138,21 +113,21 @@
                         <h2>Nuestros valores</h2>
                     </div>
 
-                    <div class="valores-grid row g-4">
+                    <div class="valores-grid">
 
-                        <article class="valor col-12 col-md-4">
+                        <article class="valor">
                             <span>❤️</span>
                             <h3>Compromiso</h3>
                             <p>Trabajamos con responsabilidad en cada atención.</p>
                         </article>
 
-                        <article class="valor col-12 col-md-4">
+                        <article class="valor">
                             <span>🐾</span>
                             <h3>Bienestar</h3>
-                            <p>Priorizamos la salud y bienestar de cada mascota.</p>
+                            <p>Priorizamos la salud y el bienestar de cada mascota.</p>
                         </article>
 
-                        <article class="valor col-12 col-md-4">
+                        <article class="valor">
                             <span>🤝</span>
                             <h3>Confianza</h3>
                             <p>Buscamos construir vínculos de confianza con las familias.</p>
@@ -166,29 +141,28 @@
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer class="footer">
-        <div class="container contenedor footer-contenido">
+    <footer class="footer-principal">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <h3>🐾 Veterinaria La Mary</h3>
+                    <p>Cuidamos a quienes forman parte de tu familia.</p>
+                </div>
 
-            <div>
-                <h3>🐾 Veterinaria La Mary</h3>
-                <p>Cuidamos a quienes forman parte de tu familia.</p>
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p>📍 Paraná, Entre Ríos</p>
+                    <p>📞 0343 - 1234567</p>
+                    <p>✉️ info@veterinarialamary.com</p>
+                </div>
             </div>
-
-            <div>
-                <h4>Contacto</h4>
-                <p>📍 Paraná, Entre Ríos</p>
-                <p>📞 0343 - 1234567</p>
-                <p>✉️ info@veterinarialamary.com</p>
-            </div>
-
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-copyright">
             <p>© 2026 Veterinaria La Mary. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
